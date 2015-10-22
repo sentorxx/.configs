@@ -1,0 +1,52 @@
+! Font settings
+
+Xft*antialias:			true
+Xft*hinting:			medium
+Xft.hintstyle:			hintlight
+Xft*.lcdfilter:			lcddefault
+
+! URxvt
+URxvt*termName:        rxvt-unicode-256color
+
+
+URxvt.scrollBar:		false
+URxvt.depth:			32
+
+! Font 
+URxvt.font:			xft:Hack:pixelsize=14
+URxvt.boldFont:			xft:Hack:bold:pixelsize=14
+URxvt.italicFont:		xft:Hack:italic:pixelsize=14
+URxvt.boldItalicFont:		xft:Hack:bold:italic:pixelsize=14
+
+! extensions
+! resize-font: https://github.com/simmel/urxvt-resize-font
+! clipboard, ...: https://github.com/muennich/urxvt-perls
+URxvt.perl-ext-common: clipboard,keyboard-select,url-select,resize-font
+
+! font resizing 
+URxvt.resize-font.smaller: 	C-minus
+URxvt.resize-font.bigger: 	C-plus
+URxvt.resize-font.reset: 	C-0
+
+! url browsing ... urls will be underlined
+! mark the url with C-b (browse) and hit return to open in browser
+URxvt.keysym.C-b: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+! copy paste emacs like ... also via tmux 
+URxvt.keysym.Control-w: perl:clipboard:copy
+URxvt.keysym.Control-y: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+
+! font spacing
+! By default the distance between characters can feel too wide
+! It is controlled by this entry:
+! negative <number> decreases the spacing by <number> pixel
+URxvt.letterSpace:  	      	  	-2
+
+! colors 
+URxvt.background:			grey10
+URxvt.foreground:       		grey70
+
