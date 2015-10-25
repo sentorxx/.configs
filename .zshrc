@@ -13,6 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# use colors from zsh e.g. in the prompt 
+autoload -U colors
+colors 
+
 # with that tab expansion is colored 
 zmodload -i zsh/complist
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -27,11 +31,13 @@ zstyle ':completion::complete:*' cache-path ~/.zsh.d/cache/
 # browse through the completion entries 
 zstyle ':completion:*' menu select
 
-# dircolors comes from here https://github.com/seebi/dircolors-solarized
+# dircolors comes from here https://github.com/seebi/dircolors-solarized 
 eval `dircolors ~/.dircolors`
 
-### aliase
+### prompt
+PS1="%{$fg_bold[green]%}%n%{$reset_color%}@%m:%{$fg[blue]%}%~%{$reset_color%}> "
 
+### aliase
 # coloring the main commands  
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
