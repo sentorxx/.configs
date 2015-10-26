@@ -35,7 +35,10 @@ zstyle ':completion:*' menu select
 eval `dircolors ~/.dircolors`
 
 ### prompt
-PS1="%{$fg_bold[green]%}%n%{$reset_color%}@%m:%{$fg[blue]%}%~%{$reset_color%}> "
+
+# to see all 256 colors use
+# for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done
+PS1="%F{28}%n%{$reset_color%}%F{245}@%{$reset_color%}%F{221}%m%{$reset_color%}:%F{33}%~%{$reset_color%}> "
 
 ### aliase
 # coloring the main commands  
