@@ -34,6 +34,11 @@ zstyle ':completion:*' menu select
 # dircolors comes from here https://github.com/seebi/dircolors-solarized 
 eval `dircolors ~/.dircolors`
 
+# allow * in any elided part everywhere 
+# ssh <location>-<usage>-*d gives special hosts in that way 
+setopt globcomplete
+
+
 ### prompt
 
 # to see all 256 colors use
