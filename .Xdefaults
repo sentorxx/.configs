@@ -51,5 +51,7 @@ URxvt.letterSpace:  	      	  	-2
 URxvt.background:			grey10
 URxvt.foreground:       		grey70
 
+URxvt.cursorColor: darkgreen
+
 Emacs.font: Hack:pixelsize=14
 Emacs.FontBackend: xft
