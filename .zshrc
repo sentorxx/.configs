@@ -41,10 +41,13 @@ setopt globcomplete
 ### prompt
 # to see all 256 colors use
 # for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done
-PS1="%F{28}%n%{$reset_color%}%F{245}@%{$reset_color%}%F{221}%m%{$reset_color%}:%F{33}%~%{$reset_color%}> "
+PS1="%F{28}%n%{$reset_color%}%F{245}@%{$reset_color%}%F{221}%m%{$reset_color%}:%F{33}%~%{$reset_color%}
+> "
 
 ### aliase
 # coloring the main commands  
 alias ls='ls --color=auto --time-style=long-iso'
 alias grep='grep --color=auto'
 alias less='less -R'
+# show the line numbers by default; Ctrl-c help without the -c argument
+alias nano='nano -c'
