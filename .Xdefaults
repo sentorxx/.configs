@@ -36,7 +36,8 @@ URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
 
 ! copy paste emacs like ... also via tmux 
-URxvt.keysym.Control-w: perl:clipboard:copy
+! Control-w kills the nano search function via Ctrl-w so rename it ... 
+URxvt.keysym.Control-cp: perl:clipboard:copy
 URxvt.keysym.Control-y: perl:clipboard:paste
 URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
