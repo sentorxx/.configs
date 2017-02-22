@@ -41,7 +41,7 @@ setopt globcomplete
 ### prompt
 # to see all 256 colors use
 # for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done
-PS1="%F{28}%n%{$reset_color%}%F{245}@%{$reset_color%}%F{221}%m%{$reset_color%}:%F{33}%~%{$reset_color%}
+PS1="%F{28}%n%{$reset_color%}%F{245}@%{$reset_color%}%F{221}%m%{$reset_color%}:%F{33}%~%{$reset_color%}  %F{46}(T420s) %{$reset_color%}
 > "
 
 ### aliase
