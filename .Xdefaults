@@ -1,5 +1,4 @@
 ! Font settings
-
 Xft*dpi: 96
 Xft*antialias:			true
 Xft*hinting:			true
@@ -54,5 +53,5 @@ URxvt.foreground:       		grey70
 
 URxvt.cursorColor: darkgreen
 
-Emacs.font: Hack:pixelsize=14
+Emacs.font: Hack:pixelsize=15
 Emacs.FontBackend: xft
